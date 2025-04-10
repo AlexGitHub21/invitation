@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200&display=swap');
+
+
+
+.block-passport {
+    display: flex;
+    background: #d8ebef;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.plane-fly {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 1; 
+    animation: fly-diagonal 5s ease-in-out infinite;
+}
+
+/* разные задержки, чтобы они вылетали по очереди */
+.plane-fly:nth-child(1) {
+    animation-delay: 0s;
+}
+.plane-fly:nth-child(2) {
+    animation-delay: 2s;
+}
+.plane-fly:nth-child(3) {
+    animation-delay: 4s;
+}
+
+@keyframes fly-diagonal {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;  /* Начинаем с полной видимости */
+    }
+    10% {
+        opacity: 1;  /* Самолет уже видим */
+    }
+    100% {
+        transform: translate(800px, -600px) rotate(45deg);
+        opacity: 0;  /* Самолет исчезает в конце полета */
+    }
+}
+.passport-container {
+    width: 800px;
+    height: 550px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+
+.passport-front {
+    margin: 25px auto;
+    width: 350px;
+    height: 450px;
+    transform: rotateY(0deg);
+    background-color: rgb(155, 21, 30);
+    border-radius: 1% 5% 5% 1%;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.passport-front::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.5), transparent);
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+    animation: flash-corner 3s infinite alternate; /* Анимация мигания */
+}
+
+@keyframes flash-corner {
+    0% {
+        opacity: 0.2;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
+    }
+    25% {
+        opacity: 0.5;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), transparent);
+    }
+    50% {
+        opacity: 1;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 1), transparent);
+    }
+    100% {
+        opacity: 0.2;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
+    }
+}
+
+.front-title {
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+    background: linear-gradient(45deg, #ffdb00, #feb000 33%, #fe8000 66%, #fd5a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #feb000;
+}
+.text-front {
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    background: linear-gradient(45deg, #ffdb00, #feb000 33%, #fe8000 66%, #fd5a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #feb000;
+}
+.text-front {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.passport-inner {
+    position: absolute;
+    top: 1%;
+    margin: 25px auto;
+    width: 750px;
+    height: 450px;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(155, 21, 30);
+    transform: translate(-50%, -50%) rotateY(180deg);
+    transition: transform 0.8s, opacity 0.5s ease-in-out;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.passport-container.open .passport-front {
+    transform: rotateY(0deg);
+}
+
+.passport-container.open .passport-inner {
+    transform: rotateY(180deg);
+    visibility: visible;
+    opacity: 1;
+}
+.passport-title {
+    margin-bottom: 10px;
+}
+.passport-data {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px;
+}
+.passport-body {
+    text-align: left;
+}
+.line {
+    margin-bottom: 5px;
+}
+.first-line {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.passport-photo {
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.passport-photo img {
+    
+    width: 100%;
+    height: 100%;
+}
+.passport-left, .passport-right {
+    width: 50%;
+    padding: 20px;
+    background: #fff2e8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.62);
+}
+
+.passport-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.passport-right .title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+.passport-right .desc {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.passport-left {
+    background: linear-gradient(0deg, #f3ac76, #fedabf 5%, #f8dbc4 66%, #fff2e8);
+    
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.visa-izhevsk, .visa-kazan, .visa-moscow,
+.visa-peterburg, .visa-sochi, .visa, .visa-irkutsk, .visa-baku {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+.visa-izhevsk {
+    position: absolute;
+    top: 135px;
+    right: 35px;
+    transform: rotate(45deg);
+}
+.visa-kazan {
+    position: absolute;
+    top: 140px;
+    left: 55px;
+    transform: rotate(-38deg);
+}
+
+.visa-moscow {
+    position: absolute;
+    bottom: 110px;
+    left: 155px;
+    transform: rotate(48deg);
+}
+.visa-peterburg {
+    position: absolute;
+    bottom: 35px;
+    right: 24px;
+}
+.visa-sochi {
+    position: absolute;
+    top: 60px;
+    right: 130px;
+    transform: rotate(35deg);
+}
+.visa {
+    position: absolute;
+    bottom: 45px;
+    left: 25px;
+    transform: rotate(168deg);
+}
+.visa-irkutsk {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    transform: rotate(15deg);
+}
+.visa-baku {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: rotate(255deg);
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) and (orientation: portrait) {
+    .block-passport {
+        min-width: 95dvw;
+        height: 100vh;
+    }
+    .passport-container {
+        background: #e8fdff;
+        box-shadow: none;
+        padding-bottom: 35px;
+        width: 100dvw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .passport-front {
+        max-width: 85dvw;
+        min-height: 60vh;
+    }
+    .front-title {
+        font-size: 45px;
+    }
+    .passport-inner {
+        align-items: center;
+        width: 90dvw;
+        height: 830px;
+        flex-direction: column;
+        border-radius: 8px;
+        
+    }
+
+    .passport-left, .passport-right {
+        width: 85dvw;
+        border-radius: 10px;
+        flex: 1;
+        display: flex;
+        min-height: 0;
+        gap: 10px;
+    }
+
+    .passport-right {
+        order: 2;
+    }
+
+    .passport-left {
+        order: 1; 
+    }
+    .text-front {
+        margin-top: 50px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .passport-left {
+        background: linear-gradient(-90deg, #f3ac76, #fedabf 5%, #f8dbc4 66%, #fff2e8);
+    }
+
+}

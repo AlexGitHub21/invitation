@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/ticket.css">
+    <link rel="stylesheet" type="text/css" href="/css/passport.css">
+    <title>Авиабилет</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block-passport">
+                <div class="passport-container">
+                    <div class="passport-front">
+                        <div class="block-text">
+                            <p class="front-title">Passport</p>
+                            <p class="text-front">Любовь - это путь, где нет ни конца, ни начала, только бескрайний полет</p>
+                            <img class="plane-fly" src="/images/icon-paper-plane.png" alt="Золотой самолетик">
+                        </div>
+                    </div>
+                    <div class="passport-inner">
+                        <div class="passport-left">
+                            <img class="visa-izhevsk" src="/images/visa-izhevsk.jpg" alt="Штамп Ижевск">
+                            <img class="visa-kazan" src="/images/visa-kazan.jpg" alt="Штамп Казань">
+                            <img class="visa-moscow" src="/images/visa-moscow.jpg" alt="Штамп Москва">
+                            <img class="visa-peterburg" src="/images/visa-peterburg.jpg" alt="Штамп СПб">
+                            <img class="visa-sochi" src="/images/visa-sochi.jpg" alt="Штамп Сочи">
+                            <img class="visa" src="/images/visa.png" alt="Штамп">
+                            <img class="visa-irkutsk" src="/images/visa-irkutsk.jpg" alt="Штамп Иркутск">
+                            <img class="visa-baku" src="/images/visa-baku.jpg" alt="Штамп Баку">
+                        </div>
+                        <div class="passport-right">
+                            <div class="passport-title">
+                                <div class="first-line">
+                                    <div class="type">
+                                        <div class="title">Тип/Type</div>
+                                        <div class="desc">P</div>
+                                    </div>
+                                    <div class="code">
+                                        <div class="title">Код государства/<br>Code of State</div>
+                                        <div class="desc">Love</div>
+                                    </div>
+                                    <div class="no">
+                                        <div class="title">Номер паспорта/<br>Passport No.</div>
+                                        <div class="desc">78 21082025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="passport-data">
+                                <div class="passport-photo">
+                                    <img src="/images/bride_groom.png" alt="Фото пары">
+                                </div>
+                                <div class="passport-body">
+                                    <div class="line">
+                                        <div class="surname">
+                                            <div class="title">Фамилия/Surname</div>
+                                            <div class="desc">Паршенков/Parshenkov<br>Зуева/Zueva</div>
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="name">
+                                            <div class="title">Имя/Name</div>
+                                            <div class="desc">Артем & Валерия<br>Artem & Valeriia</div>
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="nationality">
+                                            <div class="title">Гражданство/Nationality</div>
+                                            <div class="desc">Future Newlyweds</div>
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="date-birth">
+                                            <div class="title">Дата Рождения/Date of birth</div>
+                                            <div class="desc">01.04.2023</div>
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="place-birth">
+                                            <div class="title">Место рождения/Place of birth</div>
+                                            <div class="desc">Saint-Petersburg & Izhevsk</div>
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="wedding-date">
+                                            <div class="title">Дата свадьбы/Wedding date</div>
+                                            <div class="desc">21.08.2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="block-ticket">
+            <div class="ticket-header">
+                <div class="logo">AIR WEDDING <span class="dots">•••</span></div>
+                <div class="boarding-pass">BOARDING PASS / ПОСАДОЧНЫЙ ТАЛОН</div>
+            </div>
+            <div class="ticket-body">
+                <div class="left-section">
+                    <div class="flight-info">
+                        <div>ISSUE TIME / ВРЕМЯ ВЫДАЧИ:<br><strong>21AUG25 12:00</strong></div>
+                        <div>PNR / КОД БРОНИРОВАНИЯ:<br><strong>WEDDING</strong></div>
+                        <div>TICKET NUMBER / НОМЕР БИЛЕТА:<br><strong>78</strong></div>
+                    </div>
+                    <div class="passenger-info">
+                        <div>PASSENGER'S NAME / ИМЯ ПАССАЖИРА:<br><strong><span id="passenger-name"></strong></div>
+                    </div>
+                    <div class="route-info">
+                        <div>DEPARTURE CITY / ГОРОД ВЫЛЕТА:<br><strong><span id="passenger-city"></span></strong></div>
+                        <div>CITY OF ARRIVAL / ГОРОД ПРИБЫТИЯ:<br><strong>г. Санкт-Петербург</strong></div>
+                    </div>
+                    <div class="flight-details">
+                        <div>FLIGHT / РЕЙС:<br><strong>21/08</strong></div>
+                        <div>DATE / ДАТА РЕЙСА:<br><strong>21AUG25</strong></div>
+                        <div>TIME / ВРЕМЯ:<br><strong>12:00</strong></div>
+                        <div>TERMINAL / ТЕРМИНАЛ:<br><strong>A</strong></div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="boarding-gate">
+                        <div>GATE / ВЫХОД:<br><strong>ASK</strong></div>
+                        <div>GATE CLOSE / ОКОНЧАНИЕ ПОСАДКИ:<br><strong>12:00</strong></div>
+                    </div>
+                    <div class="seat-info">
+                        <div>SEAT / МЕСТО:<br><strong>Together forever</strong></div>
+                        <div>CLASS / КЛАСС:<br><strong>Business Class of love</strong> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-footer">
+                GATE CLOSES 25 MINUTES BEFORE DEPARTURE<br>
+                ПОСАДКА ЗАКАНЧИВАЕТСЯ ЗА 25 МИНУТ ДО ВЫЛЕТА
+            </div>
+        </div>
+        <div class="block-calendar">
+            <div class="calendar">
+                <div class="title-calendar">Свадьба состоится</div>
+                <div class="calendar-body"><img src="/images/calendar.png" alt="Календарь"></div>
+            </div>
+        </div>
+        <div class="block-location">
+            <div class="location">
+                <div class="title-location">Локация</div>
+                <div class="desc-location">Мы решили провести свадебный день на загородной площадке «Panorama Hall».
+                    Ленинградская область, городской поселок Токсово, ул. Разъезжая, 11.
+                    <br><a href="https://yandex.ru/maps/-/CHR2v8I3">Открыть в Яндекс Карты</a>
+                </div>
+                <img src="/images/location.png" alt="Площадка">
+            </div>
+        </div>
+        <div class="block-time">
+            <div class="info">
+                <div class="title-time">Тайминг дня</div>
+                <div class="registry-info">
+                    <img src="/images/ring.png" alt="Кольцо">
+                    <div class="time-registry">12:00 - Торжественная регистрация</div>
+                    <div class="desc-registry">Адрес: г. Санкт-Петербург, Английская набережная, д. 28, Дворец Бракосочетания № 1 </div>
+                    <a href="https://yandex.ru/maps/org/dvorets_brakosochetaniya_1/1311913400?si=29yczydrdzwpymh5b0pmktyyw4">Открыть в Яндекс Карты</a>
+                </div>
+                <div class="transfer-info">
+                    <img src="/images/bus.png" alt="Автобус">
+                    <div class="time-transfer">13:30 - Трансфер</div>
+                    <div class="desc-transfer">Мы организуем трансфер, который доставит Вас прямо к месту проведения мероприятия. </div>
+                </div>
+                <div class="welcome-info">
+                    <img src="/images/buffet.png" alt="Коктейль">
+                    <div class="time-welcome">15:00 - Welcome / фуршет</div>
+                    <div class="desc-welcome">Время пролетит незаметно за игристым и общением с другими гостями.</div>
+                </div>
+                <div class="ceremony-info">
+                    <img src="/images/ceremony.png" alt="Жених и невеста">
+                    <div class="time-ceremony">15:30 - Церемония регистрации</div>
+                    <div class="desc-ceremony">Мы будем рады разделить с вами важный момент создания нашей семьи.</div>
+                </div>
+                <div class="banquet-info">
+                    <img src="/images/banquet.png" alt="Кусок торта">
+                    <div class="time-banquet">16:00 - Банкет</div>
+                    <div class="desc-banquet">На праздничном ужине будет не только вкусно, но и очень весело. <br>
+                        В программе вечера запланировано много танцев, развлечений и трогательных моментов. </div>
+                </div>
+                <div class="end-info">
+                    <img src="/images/end.png" alt="Хлопушка">
+                    <div class="time-end">23:00 - Завершение вечера</div>
+                    <div class="desc-end">Надеемся, этот праздник принесет Вам массу положительных эмоций и запомнится на долгое время. </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-dresscode">
+            <div class="dresscode">
+                <div class="title-dresscode">Дресс-код</div>
+                <div class="text">
+                    Дорогие гости! 
+                    <br>Нам действительно важно, чтобы атмосфера этого дня была единой и гармоничной. 
+                    Поэтому мы просим вас поддержать нас и выбрать наряды в цветах палитры нашей свадьбы. 
+                    <br>Это не просто пожелание — это часть концепции и атмосферы нашего праздника. 
+                </div>
+                <div class="color-labels">
+                    <div>Аквамарин</div>
+                    <div>Лиловый</div>
+                    <div>Синий</div>
+                    <div>Шоколадный</div>
+                </div>
+                <div class="color"></div>
+            </div>
+        </div>
+        <div class="block-wishes">
+            <div class="title-wishes">Пожелания!</div>
+            <div class="wishes">
+                <div class="wish">
+                    Пожалуйста, не дарите нам цветы! 
+                    <br>Мы не успеем насладиться их красотой и ароматом. 
+                    <br>Мы будем рады получить от вас не цветы, а бутылочку хорошего вина или виски, остальное можно поместить в конверт.</div>
+                <div class="wish">
+                    Мы приглашаем вас не только наслаждаться торжеством, но и принимать активное участие в нашем празднике! 
+                    <br>Если у вас есть интересная идея для интерактива, не стесняйтесь подойти к ведущему и предложить своё участие. 
+                    <br>Тосты, конечно, приветствуются, но мы будем признательны, если их будет немного.
+                </div>
+                <div class="wish">
+                    Пожалуйста, воздержитесь от выкриков «Горько», чтобы сохранить атмосферу лёгкости и веселья. 
+                    <br>Ведь поцелуй — это знак выражения чувств, и он не может быть по заказу. 
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&#9665;</button>
+                <button class="next-button" aria-label="Посмотреть следующий слайд">&#9655;</button>
+            </div>
+        </div>
+        <div class="block-timer">
+            <div class="title-timer">До нашей свадьбы осталось</div>
+            <div class="timer">
+                <div class="countdown">
+                    <div class="countdown-item">
+                    <span id="days">00</span>
+                    <span class="label">Дней</span>
+                    </div>
+                    <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <span class="label">Часов</span>
+                    </div>
+                    <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <span class="label">Минут</span>
+                    </div>
+                    <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <span class="label">Секунд</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-questionnaire">
+            <div class="title-question">Анкета гостя</div>
+            <div class="question">
+                <div class="desc-question">Чтобы сделать празднование более комфортным, пожалуйста, заполните данную анкету и подтвердите свое присутствие до 01.06.2025.
+                    <br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfUJ_NHU7Kh4Xn4uczbAiz2_MqmybEQekQaFo2o3MCMNOJwQQ/viewform?usp=dialog">Открыть анкету гостя</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="/js/ticket.js"></script>
+</body>
+</html>

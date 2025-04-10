@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Montserrat+Alternates:wght@300&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+body {
+    background: #e8fdff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    margin-top: 20px;
+    overflow: visible;
+    gap: 20px;
+    width: 1000px;
+}
+
+
+.block-ticket {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    min-width: 320px;
+    margin: 10px auto;
+}
+
+.ticket-header {
+    background: #0076bd;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.ticket-body {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dashed #0076bd;
+}
+
+.flight-info, .passenger-info, .route-info, .flight-details, .boarding-gate, .seat-info, .button-survey {
+    display: flex;
+    flex-direction: row;
+}
+
+.flight-info div, .passenger-info div, .route-info div, .flight-details div, .boarding-gate div, .seat-info div, .button-survey div {
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.ticket-footer {
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    background: #0076bd;
+    color: white;
+}
+
+.right-section {
+    position: relative;
+    border-left-style: dashed;
+    padding-left: 10px;
+}
+
+
+
+
+
+.block-calendar {
+    display: flex;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background: #d8ebef;
+    border-radius: 8px;
+    width: 100%;
+}
+.calendar {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+}
+.title-calendar {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.calendar-body img {
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+}
+
+
+.block-location {
+    display: flex;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background: #d8ebef;
+    border-radius: 8px;
+    width: 100%;
+    flex-direction: column;
+    height: 550px;
+}
+.location {
+    width: 90%;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.title-location {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    padding-bottom: 10px;
+    flex-shrink: 0;
+}
+.desc-location {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    margin-bottom: 15px;
+    flex-shrink: 0;
+}
+.location img {
+    margin: 0 auto;
+    width: 300px;
+    flex-grow: 1; /* занимает всё оставшееся пространство */
+    object-fit: contain; /* или cover, если нужно обрезать */
+}
+.desc-location a {
+    font-size: 20px;
+}
+
+
+
+.block-time {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background: #d8ebef;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    width: 90%;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    gap: 10px;
+}
+
+.title-time {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.registry-info, .transfer-info, .welcome-info, 
+.ceremony-info, .banquet-info, .end-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    flex-direction: column;
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+.registry-info a {
+    font-size: 20px;
+}
+
+.time-registry, .time-transfer, .time-welcome, 
+.time-ceremony, .time-banquet, .time-end {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.desc-registry, .desc-transfer, .desc-welcome, 
+.desc-ceremony, .desc-banquet, .desc-end {
+    font-family: "Gentium Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.info img {
+    mix-blend-mode: multiply;
+}
+
+
+
+
+
+.block-dresscode {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background: #d8ebef;
+    border-radius: 8px;
+    /* border-radius: 2% / 5%; */
+    margin: 0 auto;
+}
+.dresscode {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+}
+.title-dresscode {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.text {
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.color-labels {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+.color-labels > div {
+    text-align: center;
+    width: 25%; /* Чтобы каждая подпись занимала равную часть */
+}
+.color {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+
+    background: linear-gradient(
+        to right,
+        rgb(182, 246, 248) 0%,
+        rgb(221, 162, 239) 40%,
+        rgb(1, 41, 102) 80%,
+        rgb(53, 19, 17) 100%
+    );
+}
+
+.color::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+
+    animation: shine 3s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+.block-wishes {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background: #d8ebef;
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    height: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.title-wishes {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+}
+.wishes {
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.wish {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 5%;
+    padding-top: 15px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 10px;  
+}
+.buttons button {
+    width: 50px;
+    height: 50px;
+    background-color: #0076bd;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+
+.block-timer {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background: #d8ebef;
+    border-radius: 8px;
+    margin: 0 auto;
+    height: 200px;
+}
+.title-timer {
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+}
+   
+.countdown-item {
+    margin: 0 20px;
+    text-align: center;
+}
+   
+.countdown-item span {
+    display: block;
+    font-size: 30px;
+}
+   
+.label {
+    font-size: 30px;
+    color: #999;
+}
+
+
+
+.block-questionnaire {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background: #d8ebef;
+    border-radius: 8px;
+    margin: 0 auto;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    /* padding: 15px; */
+    height: 70px;
+    align-items: center;
+}
+
+.title-question {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.desc-question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+}
+.desc-question a {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+    .container {
+        width: 99dvw;
+        padding-top: 70px; 
+    }
+    .ticket-body {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+    .right-section {
+        padding-top: 10px;
+        border-left: none;
+        border-top: 2px dashed #0076bd;
+    }
+    .flight-info div, .passenger-info div, .route-info div, .flight-details div, .boarding-gate div, .seat-info div {
+        margin-bottom: 20px;
+    }
+    .ticket-footer {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .calendar-body img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .location {
+        width: 95dvw;
+    }
+    .desc-location {
+        font-size: 20px;
+    }
+
+    .info {
+        width: 95dvw;
+    }
+
+
+    .dresscode {
+        width: 95dvw;
+    }
+    .title-dresscode {
+        
+        font-size: 30px;
+        
+    }
+    .text {
+
+        font-size: 20px;
+    }
+    .color {
+        height: 80px;
+        max-width: 80vw;
+    }
+    .color-labels {
+        min-width: 80dvw;
+    }
+
+    .block-wishes {
+        min-height: 610px;
+    }
+    .title-wishes {
+        margin-top: 20px;
+    }
+    .wishes {
+        width: 100dvw;
+        min-height: 500px;
+    }
+
+    .countdown-item {
+        margin: 0 5px;
+        text-align: center;
+    }
+   
+    .countdown-item span {
+        display: block;
+        font-size: 20px;
+    }
+
+    .block-questionnaire {
+        height: 350px;
+    }
+    .question {
+        display: flex;
+        flex-direction: column;
+        width: 95dvw;
+    }
+
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .ticket-header, .ticket-footer {
+        padding: 2px;
+    }
+    .container {
+        width: 99dvw;
+        padding-top: 20px; 
+    }
+    .ticket {
+        max-height: 95vh;
+    }
+    .block-wishes {
+        min-height: 350px;
+    }
+    .wishes {
+        min-height: 200px;
+    }
+    .dresscode {
+        width: 100dvw;
+    }
+    .color {
+        height: 80px;
+        max-width: 60dvw;
+    }
+    .color-labels {
+        min-width: 60dvw;
+    }
+    .title-dresscode {
+        font-size: 35px;
+    }
+    .text {
+        font-size: 15px;
+    }
+}
