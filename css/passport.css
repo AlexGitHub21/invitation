@@ -91,39 +91,6 @@
     to { opacity: 0; /* Прозрачный текст */ }
    }
 
-/* .passport-front::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.5), transparent);
-    transform: rotate(0deg);
-    transform-origin: bottom right;
-    clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
-    animation: flash-corner 3s infinite alternate; 
-}
-
-@keyframes flash-corner {
-    0% {
-        opacity: 0.2;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
-    }
-    25% {
-        opacity: 0.5;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), transparent);
-    }
-    50% {
-        opacity: 1;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 1), transparent);
-    }
-    100% {
-        opacity: 0.2;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
-    }
-} */
-
 .front-title {
     font-family: "Alumni Sans", sans-serif;
     font-optical-sizing: auto;
@@ -263,44 +230,53 @@
 
 .visa-izhevsk, .visa-kazan, .visa-moscow,
 .visa-peterburg, .visa-sochi, .visa {
-    width: 120px;
-    height: 120px;
     border-radius: 50%;
 }
 .visa-izhevsk {
     position: absolute;
-    top: 135px;
-    right: 35px;
+    top: 16vh;
+    right: 5vw;
+    width: 140px;
+    height: 140px;
     transform: rotate(45deg);
 }
 .visa-kazan {
     position: absolute;
-    top: 140px;
-    left: 55px;
+    top: 16vh;
+    left: 25vw;
+    width: 135px;
+    height: 135px;
     transform: rotate(-38deg);
 }
-
 .visa-moscow {
     position: absolute;
-    bottom: 110px;
-    left: 155px;
+    top: 2vh;
+    left: 8vw;
+    width: 140px;
+    height: 140px;
     transform: rotate(48deg);
 }
 .visa-peterburg {
     position: absolute;
-    bottom: 35px;
-    right: 24px;
+    bottom: 3vh;
+    right: 22vw;
+    width: 140px;
+    height: 140px;
 }
 .visa-sochi {
     position: absolute;
-    top: 60px;
-    right: 130px;
+    top: 2vh;
+    right: 5vw;
+    width: 120px;
+    height: 120px;
     transform: rotate(35deg);
 }
 .visa {
     position: absolute;
-    bottom: 45px;
-    left: 25px;
+    bottom: 6vh;
+    left: 3vw;
+    width: 140px;
+    height: 140px;
     transform: rotate(168deg);
 }
 
