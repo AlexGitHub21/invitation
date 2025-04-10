@@ -69,8 +69,29 @@
     justify-content: center;
     text-align: center;
 }
+.click {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    animation: blink 3s infinite;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: large;
+    background: linear-gradient(45deg, #ffdb00, #feb000 33%, #fe8000 66%, #fd5a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #feb000;
+}
+@keyframes blink {
+    from { opacity: 1; /* Непрозрачный текст */ }
+    to { opacity: 0; /* Прозрачный текст */ }
+   }
 
-.passport-front::after {
+/* .passport-front::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -81,7 +102,7 @@
     transform: rotate(0deg);
     transform-origin: bottom right;
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
-    animation: flash-corner 3s infinite alternate; /* Анимация мигания */
+    animation: flash-corner 3s infinite alternate; 
 }
 
 @keyframes flash-corner {
@@ -101,7 +122,7 @@
         opacity: 0.2;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
     }
-}
+} */
 
 .front-title {
     font-family: "Alumni Sans", sans-serif;
@@ -241,7 +262,7 @@
 
 
 .visa-izhevsk, .visa-kazan, .visa-moscow,
-.visa-peterburg, .visa-sochi, .visa, .visa-irkutsk, .visa-baku {
+.visa-peterburg, .visa-sochi, .visa {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -282,18 +303,8 @@
     left: 25px;
     transform: rotate(168deg);
 }
-.visa-irkutsk {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    transform: rotate(15deg);
-}
-.visa-baku {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    transform: rotate(255deg);
-}
+
+
 
 /* Мобильная версия */
 @media (max-width: 768px) and (orientation: portrait) {
@@ -341,7 +352,7 @@
 
     .passport-left {
         order: 1;
-        /* min-height: 150px;  */
+        
     }
     .text-front {
         margin-top: 50px;
