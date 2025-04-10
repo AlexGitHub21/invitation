@@ -230,53 +230,50 @@
 
 .visa-izhevsk, .visa-kazan, .visa-moscow,
 .visa-peterburg, .visa-sochi, .visa {
+    width: 145px;
+    height: 145px;
     border-radius: 50%;
 }
 .visa-izhevsk {
     position: absolute;
-    top: 16vh;
-    right: 5vw;
-    width: 140px;
-    height: 140px;
+    top: 75px;
+    right: 5px;
+    width: 130px;
+    height: 130px;
     transform: rotate(45deg);
 }
 .visa-kazan {
     position: absolute;
-    top: 16vh;
-    left: 25vw;
-    width: 135px;
-    height: 135px;
+    top: 140px;
+    left: 35px;
     transform: rotate(-38deg);
 }
+
 .visa-moscow {
     position: absolute;
-    top: 2vh;
-    left: 8vw;
-    width: 140px;
-    height: 140px;
+    bottom: 110px;
+    left: 155px;
     transform: rotate(48deg);
 }
 .visa-peterburg {
     position: absolute;
-    bottom: 3vh;
-    right: 22vw;
-    width: 140px;
-    height: 140px;
+    bottom: 15px;
+    right: 15px;
 }
 .visa-sochi {
     position: absolute;
-    top: 2vh;
-    right: 5vw;
-    width: 120px;
-    height: 120px;
+    top: 10px;
+    right: 130px;
+    width: 130px;
+    height: 130px;
     transform: rotate(35deg);
 }
 .visa {
     position: absolute;
-    bottom: 6vh;
-    left: 3vw;
-    width: 140px;
-    height: 140px;
+    bottom: 25px;
+    left: 25px;
+    width: 130px;
+    height: 130px;
     transform: rotate(168deg);
 }
 
