@@ -354,7 +354,7 @@ body {
   
 .wish {
     text-align: center;
-    padding: 15px;
+    /* padding: 10px; */
     border-radius: 8px;
     margin: 10px;
     font-family: "Montserrat Alternates", sans-serif;
@@ -555,14 +555,18 @@ body {
     }
 
     .block-wishes {
-        min-height: 610px;
+        min-height: 500px;
     }
     .title-wishes {
         margin-top: 20px;
+        
     }
     .wishes {
-        width: 100dvw;
-        min-height: 500px;
+        max-width: 100dvw;
+        min-height: 400px;
+    }
+    .wish {
+        font-size: 20px;
     }
 
     .countdown-item {
@@ -605,6 +609,9 @@ body {
     }
     .wishes {
         min-height: 200px;
+    }
+    .wish {
+        font-size: 20px;
     }
     .dresscode {
         width: 100dvw;
