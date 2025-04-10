@@ -6,7 +6,7 @@
     display: flex;
     background: #d8ebef;
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     position: relative;
@@ -48,11 +48,13 @@
     }
 }
 .passport-container {
+    display: flex;
     width: 800px;
     height: 550px;
     justify-content: center;
     text-align: center;
     position: relative;
+    align-items: center;
 }
 
 
@@ -295,17 +297,19 @@
 
 /* Мобильная версия */
 @media (max-width: 768px) and (orientation: portrait) {
+
     .block-passport {
         min-width: 95dvw;
-        height: 100vh;
+        min-height: 99dvh;
     }
     .passport-container {
         background: #e8fdff;
         box-shadow: none;
         padding-bottom: 35px;
-        width: 100dvw;
-        height: 100vh;
+        width: 99dvw;
+        min-height: 100vh;
         flex-direction: column;
+        
     }
 
     .passport-front {
@@ -317,11 +321,10 @@
     }
     .passport-inner {
         align-items: center;
-        width: 90dvw;
-        height: 830px;
+        max-width: 90dvw;
+        height: 95dvh;
         flex-direction: column;
         border-radius: 8px;
-        
     }
 
     .passport-left, .passport-right {
@@ -329,16 +332,16 @@
         border-radius: 10px;
         flex: 1;
         display: flex;
-        min-height: 0;
-        gap: 10px;
     }
 
     .passport-right {
         order: 2;
+        max-height: 45dvh;
     }
 
     .passport-left {
         order: 1; 
+        max-height: 45vh;
     }
     .text-front {
         margin-top: 50px;
