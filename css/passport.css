@@ -300,7 +300,7 @@
 
     .block-passport {
         min-width: 95dvw;
-        min-height: 99dvh;
+        /* min-height: 99dvh; */
     }
     .passport-container {
         background: #e8fdff;
@@ -322,26 +322,27 @@
     .passport-inner {
         align-items: center;
         max-width: 90dvw;
-        height: 95dvh;
+        height: 99vh;
         flex-direction: column;
         border-radius: 8px;
+        padding-bottom: 10px;
     }
 
     .passport-left, .passport-right {
         width: 85dvw;
         border-radius: 10px;
-        flex: 1;
+        /* flex: 1; */
         display: flex;
+        min-height: 45vh;
     }
 
     .passport-right {
         order: 2;
-        max-height: 45dvh;
     }
 
     .passport-left {
-        order: 1; 
-        max-height: 45vh;
+        order: 1;
+        /* min-height: 150px;  */
     }
     .text-front {
         margin-top: 50px;
